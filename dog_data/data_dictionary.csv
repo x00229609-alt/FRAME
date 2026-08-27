@@ -1,0 +1,33 @@
+column,type,description
+adoption_id,string,Unique adoption id
+age_years,float,Dog age at adoption
+size,string,small / medium / large / xlarge
+weight_kg,float,Weight (kg)
+breed_group,string,terrier / herding / working / hound / toy / sporting / mixed
+intake_type,string,How the dog entered the shelter: stray / owner_surrender / transfer / born_in_care
+days_in_shelter,int,Length of stay before adoption
+previously_returned,int,1 if this dog had been returned from a previous adoption
+medical_needs,string,none / minor / chronic
+neutered,int,1 if spayed/neutered
+aggression_score,float,Shelter behaviour assessment: aggression (0-10) — the top return driver
+anxiety_separation,float,Shelter behaviour assessment: separation anxiety (0-10)
+reactivity_to_dogs,float,Shelter behaviour assessment: reactivity to other dogs (0-10)
+energy_level,float,Dog energy level (0-10)
+training_level,float,Training / obedience level (0-10)
+house_trained,int,1 if house-trained
+first_time_owner,int,1 if the adopter has never owned a dog
+household_has_kids,int,1 if children in the home
+household_has_pets,int,1 if resident pets already in the home
+home_type,string,house_owned / house_rented / apartment
+has_yard,int,1 if the home has a yard
+hours_alone_per_day,float,Hours the dog would be left alone daily
+adopter_activity_level,float,Adopter activity level (0-10)
+visits_before_adoption,int,Number of shelter visits before adopting — protective
+met_resident_pets,int,1 if the dog met the resident pets before adoption — protective
+adoption_counseling,int,1 if the adopter received adoption counselling — protective
+expectation_score,float,How high the adopter's expectations were (0-10) — higher expectations are a documented RISK factor
+energy_mismatch,float,|dog energy - adopter activity| — match quality
+size_home_mismatch,int,1 if a large/xlarge dog going to an apartment
+return_reason,string,"Why the dog came back (aggression, conflict_with_resident_pets, separation_anxiety_destruction, unmet_expectations, housing_landlord, cost_time, allergies, medical_needs, other) or kept"
+days_to_return,float,Days from adoption to return (NaN if kept)
+returned,int,TARGET: 1 if the dog was returned to the shelter
